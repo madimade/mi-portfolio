@@ -185,7 +185,7 @@ export function Contact({ isDark }: ContactProps) {
               <div className="space-y-5">
                 {[
                   { icon: Mail, label: "Email", value: "madimade444@gmail.com", href: "mailto:madimade444@gmail.com" },
-                  { icon: Phone, label: "Phone", value: "+20 121168414", href: "tel:+20121168414" },
+                  { icon: Phone, label: "Phone", value: "+20 1211684714", href: "tel:+201211684714" },
                   { icon: MapPin, label: "Location", value: "Egypt", href: null },
                 ].map(({ icon: Icon, label, value, href }) => (
                   <div key={label} className="flex items-start gap-4">
