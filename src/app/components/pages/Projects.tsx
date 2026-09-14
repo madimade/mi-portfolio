@@ -140,7 +140,18 @@ const projects = [
     demo: "https://madimade.github.io/hospital/",
     featured: false,
     },
-];
+    {id: 11,
+     title: "coffee shop booking template",
+     description:
+     "Coffee Shop Booking: A modern online reservation platform for your favorite café. Browse our menu, reserve your favorite table for any occasion, and book coffee tasting sessions through a clean and user-friendly interface.",
+     tech: ["React", "CSS3", "JavaScript"],
+     category: "React",
+     gradient: "135deg, #8b5cf622, #ec489922",
+     github: "https://your-username.github.io/coffee-shop/",
+     demo: "https://your-username.github.io/coffee-shop/",
+     featured: false,
+    },
+  ];
 
 const filters = ["All", "PHP", "WordPress", "React", "Frontend"];
 
