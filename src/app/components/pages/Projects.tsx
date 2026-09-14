@@ -128,6 +128,18 @@ const projects = [
     demo: "https://madi-market.vercel.app/",
     featured: false,
   },
+  {
+    id: 10,
+    title: "appointment booking template",
+    description:
+    "Appointment Booking: A modern online booking platform that makes scheduling appointments simple and convenient. Browse available services, choose your preferred date and time, and manage your appointments through a clean and user-friendly interface.",
+    tech: ["React", "CSS3", "JavaScript"],
+    category: "React",
+    gradient: "135deg, #8b5cf622, #ec489922",
+    github: "https://madimade.github.io/hospital/",
+    demo: "https://madimade.github.io/hospital/",
+    featured: false,
+    },
 ];
 
 const filters = ["All", "PHP", "WordPress", "React", "Frontend"];
