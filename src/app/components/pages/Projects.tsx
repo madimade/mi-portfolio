@@ -147,8 +147,8 @@ const projects = [
      tech: ["React", "CSS3", "JavaScript"],
      category: "React",
      gradient: "135deg, #8b5cf622, #ec489922",
-     github: "https://your-username.github.io/coffee-shop/",
-     demo: "https://your-username.github.io/coffee-shop/",
+     github: "https://my-cafe-theta.vercel.app/",
+     demo: "https://my-cafe-theta.vercel.app/",
      featured: false,
     },
   ];
