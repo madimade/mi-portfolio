@@ -77,7 +77,7 @@ const projects = [
     category: "PHP",
     gradient: "135deg, #8b5cf622, #00f5ff22",
     github: "https://madimade.github.io/Onsite5/",
-    demo: "https://example.com",
+    demo: "https://madimade.github.io/Onsite5/",
     featured: false,
   },
   {
@@ -150,6 +150,18 @@ const projects = [
      github: "https://my-cafe-theta.vercel.app/",
      demo: "https://my-cafe-theta.vercel.app/",
      featured: false,
+    },
+    {
+      id: 12,
+      title: "Wayfare – Europe trips made easy",
+      description:
+        "A travel discovery experience for finding memorable trips across Europe, with curated destinations and a clean, easy-to-use interface.",
+      tech: ["React", "CSS3", "JavaScript"],
+      category: "React",
+      gradient: "135deg, #38bdf822, #34d39922",
+      github: "https://travel-place.vercel.app/",
+      demo: "https://travel-place.vercel.app/",
+      featured: false,
     },
   ];
 
@@ -279,13 +291,25 @@ export function Projects({ isDark }: ProjectsProps) {
                 e.currentTarget.style.boxShadow = "none";
               }}
             >
-              {/* Project image placeholder */}
+              {/* Project preview */}
               <div
                 className="h-52 relative overflow-hidden flex items-center justify-center"
                 style={{
                   background: `linear-gradient(${project.gradient})`,
                 }}
               >
+                {project.demo !== "#" && project.demo !== "https://example.com" && (
+                  <img
+                    src={`https://image.thum.io/get/width/1200/crop/600/${project.demo}`}
+                    alt={`${project.title} preview`}
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = "none";
+                    }}
+                  />
+                )}
+
                 {/* Grid texture */}
                 <div
                   className="absolute inset-0 opacity-[0.06]"
@@ -295,19 +319,7 @@ export function Projects({ isDark }: ProjectsProps) {
                   }}
                 />
 
-                {/* Project number */}
-                <div className="relative z-10 text-center">
-                  <div
-                    className="text-6xl font-black mb-2 opacity-10"
-                    style={{
-                      fontFamily: "'Space Grotesk', sans-serif",
-                      background: "linear-gradient(135deg, var(--neon-cyan), var(--neon-purple))",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    }}
-                  >
-                    {String(project.id).padStart(2, "0")}
-                  </div>
+                <div className="absolute left-4 bottom-4 z-10">
                   <span
                     className="px-3 py-1 rounded-full text-xs font-semibold"
                     style={{
